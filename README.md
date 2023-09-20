@@ -1,8 +1,7 @@
 # Project: Discovering objects and distinguish the instances of objects in images (Instance Segmentation)
 
 ## Motivation
-Segmentation plays a central role in a broad range of applications, including medical image analysis, autonomous vehicles, and video surveillance.  
-To achieve generalized scene analysis, the ability to distinguish between instances of objects is required.
+Segmentation plays a central role in a broad range of applications, including medical image analysis, autonomous vehicles, and video surveillance. To achieve generalized scene analysis, the ability to distinguish between instances of objects is required.
 
 Instance Segmentation is a computer vision task that involves identifying and separating individual objects within an image, including detecting the boundaries of each object and assigning a unique label to each object. 
 
