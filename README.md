@@ -34,11 +34,9 @@ The dataset is available for download on the official COCO website. (However, pl
 To help with understanding the project, we introduce the most famous model(Mask R-CNN) used in the project.
 https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md
 
-###Installation
-
+### Installation
 First install Detectron2 following the official guide: [INSTALL.md](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md).
 
-## Models
 ### Mask R-CNN pretrained model
 
 Model | Name | inf. time | box AP | mask AP | download
