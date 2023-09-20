@@ -8,6 +8,8 @@ Instance Segmentation is a computer vision task that involves identifying and se
 
 ### Objective
 The goal of instance segmentation is to produce a pixel-wise segmentation map of the image, where each pixel is assigned to a specific object instance.
+
+
 ![image](https://github.com/so45jj45/NNproject_KU_Instance-Segmentation/assets/80938806/a4f410ef-8909-475b-a083-c6ac9784fefa)
 
 
