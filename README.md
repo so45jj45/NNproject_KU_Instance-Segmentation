@@ -1,14 +1,21 @@
-# Project: Discovering objects in images and distinguish the instances of objects
+# Project: Discovering objects and distinguish the instances of objects in images
 
 
 ## Projcect introduction (Instance Segmentation)
 
-### Task introduction
-Segmentation plays a central role in a broad range of applications, including medical image analysis, autonomous vehicles, and video surveillance. To achieve generalized scene analysis, the ability to distinguish between instances of objects is required. Image segmentation is an essential component in many visual understanding systems. It involves partitioning images (or video frames) into multiple segments or objects.
+### Motivation
+Segmentation plays a central role in a broad range of applications, including medical image analysis, autonomous vehicles, and video surveillance. To achieve generalized scene analysis, the ability to distinguish between instances of objects is required. Instance segmentation is an essential component in many visual understanding systems, and involves partitioning images (or video frames) into multiple segments or objects.
+
+### Objective
+
+## Dataset description (COCO)
 
 
+## Baseline for understand the project
 
-## Installation
+To help with understanding the project, we introduce the most famous model(Mask R-CNN) used in the project.
+
+###Installation
 
 First install Detectron2 following the official guide: [INSTALL.md](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md).
 
