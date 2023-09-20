@@ -17,16 +17,24 @@ The goal of instance segmentation is to produce a pixel-wise segmentation map of
 
 ## Dataset description (COCO)
 
+The COCO object detection dataset is a large-scale image dataset designed to advance state-of-the-art techniques for the object detection task. Many researches used the
+MS COCO 2017 instance segmentation dataset. This dataset includes 118K/5K images for train/val with 80 class instance labels. Typically, to conveniently evaluate models, the evaluation is carried out on a validation dataset.
+
+The dataset is available for download on the official COCO website. (However, please note that clicking the link does not work on the Windows OS, but it can be downloaded using "wget" on the Ubuntu OS.)
+
+2017 training set: http://images.cocodataset.org/zips/train2017.zip)
+2017 validation set: http://images.cocodataset.org/zips/val2017.zip
+2017 train/val annotations: http://images.cocodataset.org/annotations/annotations_trainval2017.zip
+
 
 ## Baseline for understand the project
 
 To help with understanding the project, we introduce the most famous model(Mask R-CNN) used in the project.
+https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md
 
 ###Installation
 
 First install Detectron2 following the official guide: [INSTALL.md](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md).
-
-*Please use Detectron2 with commit id [9eb4831](https://github.com/facebookresearch/detectron2/commit/9eb4831f742ae6a13b8edb61d07b619392fb6543) if you have any issues related to Detectron2.*
 
 ## Models
 ### COCO Instance Segmentation Baselines
