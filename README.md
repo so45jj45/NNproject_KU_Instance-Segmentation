@@ -22,8 +22,10 @@ MS COCO 2017 instance segmentation dataset. This dataset includes 118K/5K images
 
 The dataset is available for download on the official COCO website. (However, please note that clicking the link does not work on the Windows OS, but it can be downloaded using "wget" on the Ubuntu OS.)
 
-2017 training set: http://images.cocodataset.org/zips/train2017.zip)
+2017 training set: http://images.cocodataset.org/zips/train2017.zip
+
 2017 validation set: http://images.cocodataset.org/zips/val2017.zip
+
 2017 train/val annotations: http://images.cocodataset.org/annotations/annotations_trainval2017.zip
 
 
@@ -37,7 +39,7 @@ https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md
 First install Detectron2 following the official guide: [INSTALL.md](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md).
 
 ## Models
-### COCO Instance Segmentation Baselines
+### Mask R-CNN pretrained model
 
 Model | Name | inf. time | box AP | mask AP | download
 --- |:---|:---:|:---:|:---:|:--:|
