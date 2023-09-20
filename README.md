@@ -3,7 +3,13 @@
 ## Motivation
 Segmentation plays a central role in a broad range of applications, including medical image analysis, autonomous vehicles, and video surveillance. To achieve generalized scene analysis, the ability to distinguish between instances of objects is required. Instance segmentation is an essential component in many visual understanding systems, and involves partitioning images (or video frames) into multiple segments or objects.
 
+
+Instance Segmentation is a computer vision task that involves identifying and separating individual objects within an image, including detecting the boundaries of each object and assigning a unique label to each object. 
+
 ### Objective
+The goal of instance segmentation is to produce a pixel-wise segmentation map of the image, where each pixel is assigned to a specific object instance.
+![image](https://github.com/so45jj45/NNproject_KU_Instance-Segmentation/assets/80938806/a4f410ef-8909-475b-a083-c6ac9784fefa)
+
 
 ## Dataset description (COCO)
 
