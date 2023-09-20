@@ -1,10 +1,11 @@
-# Project: Discovering objects in images and distinguish the instances
+# Project: Discovering objects in images and distinguish the instances of objects
 
 
-## Projcect introduction
+## Projcect introduction (Instance Segmentation)
 
-### Target task introduction
-
+### Task introduction
+IMAGE segmentation is an essential component in many visual understanding systems. It involves partitioning images (or video frames) into multiple segments or objects.
+Segmentation plays a central role in a broad range of applications, including medical image analysis, autonomous vehicles, and video surveillance.
 
 
 ## Installation
