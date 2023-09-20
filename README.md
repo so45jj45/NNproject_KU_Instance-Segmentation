@@ -4,8 +4,8 @@
 ## Projcect introduction (Instance Segmentation)
 
 ### Task introduction
-IMAGE segmentation is an essential component in many visual understanding systems. It involves partitioning images (or video frames) into multiple segments or objects.
-Segmentation plays a central role in a broad range of applications, including medical image analysis, autonomous vehicles, and video surveillance.
+Segmentation plays a central role in a broad range of applications, including medical image analysis, autonomous vehicles, and video surveillance. To achieve generalized scene analysis, the ability to distinguish between instances of objects is required. Image segmentation is an essential component in many visual understanding systems. It involves partitioning images (or video frames) into multiple segments or objects.
+
 
 
 ## Installation
