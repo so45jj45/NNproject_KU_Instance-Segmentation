@@ -1,9 +1,6 @@
-# Project: Discovering objects and distinguish the instances of objects in images
+# Project: Discovering objects and distinguish the instances of objects in images (Instance Segmentation)
 
-
-## Projcect introduction (Instance Segmentation)
-
-### Motivation
+## Motivation
 Segmentation plays a central role in a broad range of applications, including medical image analysis, autonomous vehicles, and video surveillance. To achieve generalized scene analysis, the ability to distinguish between instances of objects is required. Instance segmentation is an essential component in many visual understanding systems, and involves partitioning images (or video frames) into multiple segments or objects.
 
 ### Objective
