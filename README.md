@@ -5,6 +5,8 @@ Segmentation plays a central role in a broad range of applications, including me
 
 Instance Segmentation is a computer vision task that involves identifying and separating individual objects within an image, including detecting the boundaries of each object and assigning a unique label to each object. 
 
+Detecting and distinguishing objects in complex and diverse real-world scenarios is challenging but a problem worth tackling.
+
 
 ### Objective
 The goal of instance segmentation is to produce a pixel-wise segmentation map of the image, where each pixel is assigned to a specific object instance.
