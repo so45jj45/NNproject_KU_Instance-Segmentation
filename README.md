@@ -10,8 +10,9 @@ While extensive research is being conducted, the task of detecting and distingui
 ### Objective
 The goal of instance segmentation is to produce a pixel-wise segmentation map of the image, where each pixel is assigned to a specific object instance.
 
+### Example
+![image](https://github.com/so45jj45/NNproject_KU_Instance-Segmentation/assets/80938806/8dd0e398-0497-4065-9f4a-53a86bf2986b)
 
-![image](https://github.com/so45jj45/NNproject_KU_Instance-Segmentation/assets/80938806/a4f410ef-8909-475b-a083-c6ac9784fefa)
 
 
 ## Dataset description (COCO)
