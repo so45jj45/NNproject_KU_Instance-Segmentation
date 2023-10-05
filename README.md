@@ -71,7 +71,8 @@ python3 -m pip install -U 'git+https://github.com/facebookresearch/detectron2.gi
 #### Prepare dataset and pre-trained model
 ```
 git clone https://github.com/facebookresearch/detectron2.git
-You must place the COCO dataset to "local_path"/detectron2/datasets"
+
+(You must place the COCO dataset to "local_path"/detectron2/datasets")
 
 Ex)
 local_path/detectron2/datasets/coco/val2017
@@ -100,6 +101,20 @@ python tools/train_net.py \
   --eval-only
   MODEL.WEIGHTS saved_model_folder/model_final_a3ec72.pkl
 ```
+
+Here is my evaluation results
+
+Evaluation results for bbox: 
+|   AP   |  AP50  |  AP75  |  APs   |  APm   |  APl   |
+|:------:|:------:|:------:|:------:|:------:|:------:|
+| 42.932 | 63.330 | 46.872 | 26.402 | 46.627 | 56.114 |
+
+Evaluation results for segm: 
+|   AP   |  AP50  |  AP75  |  APs   |  APm   |  APl   |
+|:------:|:------:|:------:|:------:|:------:|:------:|
+| 38.634 | 60.449 | 41.294 | 19.489 | 41.340 | 55.350 |
+
+(Please note that the score may vary slightly depending on the version of PyTorch)
 
 ### Inference
 ```
