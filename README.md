@@ -4,11 +4,11 @@
 Image segmentation is one of the major tasks in the field of computer vision. Currently, image segmentation is used in a wide range of fields, such as medical image analysis, autonomous driving, security, satellites, and aerial photography, and it is expected to be used in even more fields in the future. Concomitant with increasing interest in the foreground and distinguishing identical instances within the same class, instance segmentation is actively being researched
 To achieve generalized scene analysis, the ability to distinguish between instances of objects is required, and so concomitant with increasing interest in the foreground and distinguishing identical instances within the same class, instance segmentation is actively being researched. 
 
-While extensive research is being conducted, the task of detecting and distinguishing objects in complex and diverse real-world scenarios remains a challenging problem.
+While extensive research is being conducted, the task of detecting and distinguishing objects in complex and diverse real-world scenarios remains a challenging problem
 
 
 ### Objective
-The goal of instance segmentation is to produce a pixel-wise segmentation map of the image, where each pixel is assigned to a specific object instance.
+The goal of instance segmentation is to produce a pixel-wise segmentation map of the image, where each pixel is assigned to a specific object instance
 
 ### Example
 ![image](https://github.com/so45jj45/NNproject_KU_Instance-Segmentation/assets/80938806/207fc8c7-06c2-4ea6-9ca6-e99c4df798cb)
@@ -30,7 +30,7 @@ The dataset is available for download on the official COCO website. (However, pl
 
 ## Baseline for understand the project
 
-To help with understanding the project, i will introduce the most famous model(Mask R-CNN) used in the project.
+To help with understanding the project, i will introduce the most famous model(Mask R-CNN) used in the project
 https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md
 
 
@@ -43,7 +43,7 @@ Anaconda environment
 ### Installation
 I followed the official guide of Detectron2: [INSTALL.md](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md).
 
-My workstation environment is as below
+My workstation environment is as below:
 
 Ubuntu 20.04
 
