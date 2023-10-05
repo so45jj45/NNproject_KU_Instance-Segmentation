@@ -37,7 +37,9 @@ https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md
 ### Requirements
 Linux or macOS with Python ≥ 3.7
 PyTorch ≥ 1.8 and torchvision that matches the PyTorch installation. Install them together at [pytorch.org](pytorch.org) to make sure of this
+
 OpenCV is optional but needed by demo and visualization
+
 Anaconda environment
 
 ### Installation
