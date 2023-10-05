@@ -44,8 +44,11 @@ Anaconda environment
 I followed the official guide of Detectron2: [INSTALL.md](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md).
 
 My workstation environment is as below
+
 Ubuntu 20.04
+
 CUDA 11.3
+
 Anaconda environment
 
 #### Create conda environment
