@@ -30,16 +30,90 @@ The dataset is available for download on the official COCO website. (However, pl
 
 ## Baseline for understand the project
 
-To help with understanding the project, we introduce the most famous model(Mask R-CNN) used in the project.
+To help with understanding the project, i will introduce the most famous model(Mask R-CNN) used in the project.
 https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md
 
-### Installation
-First install Detectron2 following the official guide: [INSTALL.md](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md).
 
-### Mask R-CNN pretrained model
+### Requirements
+Linux or macOS with Python ≥ 3.7
+PyTorch ≥ 1.8 and torchvision that matches the PyTorch installation. Install them together at pytorch.org to make sure of this
+OpenCV is optional but needed by demo and visualization
+Anaconda environment
+
+### Installation
+I followed the official guide of Detectron2: [INSTALL.md](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md).
+
+My workstation environment is as below
+Ubuntu 20.04
+CUDA 11.3
+Anaconda environment
+
+#### Create conda environment
+```
+conda create -n maskrcnn python==3.8
+conda activate maskrcnn
+```
+
+#### Install the pytorch
+```
+conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch
+(Please install PyTorch on your workstation environment according to your needs)
+```
+
+#### Install the Detecron2
+```
+python3 -m pip install -U 'git+https://github.com/facebookresearch/detectron2.git@ff53992b1985b63bd3262b5a36167098e3dada02'
+```
+
+#### Prepare dataset and pre-trained model
+```
+git clone https://github.com/facebookresearch/detectron2.git
+You must place the COCO dataset to "local_path"/detectron2/datasets"
+
+Ex)
+local_path/detectron2/datasets/coco/val2017
+local_path/detectron2/datasets/coco/train2017
+local_path/detectron2/datasets/coco/anotations
+
+You can download pre-trained models from below github site
+And make directory to save models in detectron2 root folder
+
+Ex)
+local_path/detectron2/"saved_model_folder"
+```
+
+
+### Training
+```
+python tools/train_net.py \
+  --config-file ../configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_1x.yaml \
+  --num-gpus 1 SOLVER.IMS_PER_BATCH 2 SOLVER.BASE_LR 0.0025
+```
+
+### Evaluation
+```
+python tools/train_net.py \
+  --config-file configs/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x.yaml \
+  --eval-only
+  MODEL.WEIGHTS saved_model_folder/model_final_a3ec72.pkl
+```
+
+### Inference
+```
+python demo/demo.py \
+  --config-file configs/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x.yaml
+  --input datasets/coco/val2017/*.jpg
+  --output result/
+  --opts MODEL.WEIGHTS models/model_final_a3ec72.pkl
+```
+
+### Mask R-CNN pre-trained model
 
 Model | Name | inf. time | box AP | mask AP | download
 --- |:---|:---:|:---:|:---:|:--:|
 Mask R-CNN |[R_50_1x](https://github.com/facebookresearch/detectron2/blob/master/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_1x.yaml) | 13 FPS | 38.6 | 35.2 |
 Mask R-CNN |[R_50_3x](https://github.com/facebookresearch/detectron2/blob/master/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml) | 13 FPS | 41.0 | 37.2 | 
 Mask R-CNN |[R_101_3x](https://github.com/facebookresearch/detectron2/blob/master/configs/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x.yaml) | 10 FPS | 42.9 | 38.6 |
+
+You can also find various pre-trained models from below Detectron2 official github
+https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md
