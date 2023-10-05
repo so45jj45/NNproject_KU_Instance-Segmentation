@@ -92,7 +92,7 @@ local_path/detectron2/"saved_model_folder"
 ### Training
 ```
 python tools/train_net.py \
-  --config-file ../configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_1x.yaml \
+  --config-file ../configs/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x.yaml \
   --num-gpus 1 SOLVER.IMS_PER_BATCH 2 SOLVER.BASE_LR 0.0025
 ```
 
@@ -101,7 +101,7 @@ python tools/train_net.py \
 python tools/train_net.py \
   --config-file configs/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x.yaml \
   --eval-only
-  MODEL.WEIGHTS saved_model_folder/model_final_a3ec72.pkl
+  MODEL.WEIGHTS saved_model_folder/"pre-trained model file"
 ```
 
 Here is my evaluation results
@@ -124,7 +124,7 @@ python demo/demo.py \
   --config-file configs/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x.yaml
   --input datasets/coco/val2017/*.jpg
   --output result/
-  --opts MODEL.WEIGHTS models/model_final_a3ec72.pkl
+  --opts MODEL.WEIGHTS models/"pre-trained model file"
 ```
 
 ### Mask R-CNN pre-trained model
