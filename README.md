@@ -1,4 +1,4 @@
-# Project: Discovering objects and distinguish the instances of objects in images (Instance Segmentation)
+# Project: Discovering and distinguishing the instances of objects in images (Instance Segmentation)
 
 ## Motivation
 Image segmentation is one of the major tasks in the field of computer vision. Currently, image segmentation is used in a wide range of fields, such as medical image analysis, autonomous driving, security, satellites, and aerial photography, and it is expected to be used in even more fields in the future. Concomitant with increasing interest in the foreground and distinguishing identical instances within the same class, instance segmentation is actively being researched
